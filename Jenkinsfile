@@ -9,7 +9,7 @@ node {
       // Run the maven build
       withEnv(["MVN_HOME=$mvnHome"]) {
 
-            sh '"$MVN_HOME/bin/mvn" clean package'
+            sh '"$MVN_HOME/bin/mvn" clean compile'
 
       }
    }
